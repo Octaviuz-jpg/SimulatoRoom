@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu48f05w6kaev"]
+
+[ext_resource type="Script" uid="uid://dvl0yhx3dy5q2" path="res://camara_orbit.gd" id="2_r3fl7"]
+[ext_resource type="Script" uid="uid://60g1i2dljj42" path="res://dynamic_room.gd" id="3_jka67"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CameraOrbit" type="Node3D" parent="."]
+script = ExtResource("2_r3fl7")
+
+[node name="Camera3D" type="Camera3D" parent="CameraOrbit"]
+transform = Transform3D(0.992141, 0, -0.125125, 0, 1, 0, 0.125125, 0, 0.992141, 0, 0, 0)
+
+[node name="DynamicRoom" type="Node3D" parent="."]
+script = ExtResource("3_jka67")
